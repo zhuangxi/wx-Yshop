@@ -1,0 +1,6 @@
+<!--components/newGoods/index.wxml-->
+<navigator url="{{item.url}}" class="goods" wx:for="{{goodlist}}" wx:key="{{item.id}}">
+  <image class="img" src="{{item.picUrl}}"></image>
+  <text class="intro">{{item.intro}}</text>
+  <text class="price">{{item.price}}</text>
+</navigator>

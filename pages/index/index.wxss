@@ -1,0 +1,55 @@
+/**index.wxss**/
+.search{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search .search-input {
+  width: 90%;
+  height: 70rpx;
+  background: #f4f4f4;
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search .icon {
+  width: 40rpx;
+  height: 40rpx;
+  background: url("http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/search2-2fb94833aa.png")
+  center no-repeat;
+  background-size: 100%;
+  margin-right: 10rpx;
+}
+.swiper image {
+  width: 100%;
+  height: 417rpx;
+}
+.divide{
+  width: 100%;
+  height: 100rpx;
+  font-size: 40rpx;
+  background-color: #fff;
+  padding-top: 40rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.newGoods, .recommend{
+  width: 100%;
+  height: 750rpx;
+  margin-top: 20rpx;
+  padding: 0 10rpx;
+}
+.goodTitle{
+  font-size: 40rpx;
+  padding-left: 3%;
+}
+.goods{
+  width: 100%;
+  height: 600rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

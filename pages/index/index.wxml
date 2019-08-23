@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search">
+    <navigator url="/pages/search/index" class="search-input">
+      <image class="icon"></image>
+      <text class="txt">请输入商品名称</text>
+    </navigator>
+  </view>
+  <view class="swiper">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" 
+      interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="divide">
+    <navigator wx:for="{{channel}}" class="divide-item" 
+      url="{{item.url}}" wx:key="{{item.id}}">
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+  <view class="newGoods">
+    <text class="goodTitle">新品上市</text>
+    <new-goods class="goods" goodlist="{{goodList}}"></new-goods>
+  </view>
+  <view class="recommend">
+    <text>好物推荐</text>
+    <!-- <new-goods prop-goodlist="{{goodList}}"></new-goods> -->
+  </view>
+</view>

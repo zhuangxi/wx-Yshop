@@ -1,0 +1,17 @@
+/* components/newGoods/index.wxss */
+.goods{
+  width: 45%;
+} 
+.img{
+  width:100%;
+  height: 220rpx;
+  object-fit: cover;
+}
+.intro, .price{
+  display: block;
+  text-align: center;
+  font-size: 38rpx;
+}
+.price{
+  color: red
+}
