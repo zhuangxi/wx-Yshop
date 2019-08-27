@@ -1,5 +1,6 @@
 //index.js
 //获取应用实例
+const utils = require('../../utils/util')
 const app = getApp()
 
 Page({
@@ -76,5 +77,10 @@ Page({
   },
   onLoad: function () {
 
+  },
+  getData: () => {
+    let url = 'http://localhost:3000/users/1'
+    let res = utils.request(url)
+    console.log(res)
   }
 })

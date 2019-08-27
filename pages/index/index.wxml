@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+  <button bindtap="getData">点击</button>
   <view class="search">
     <navigator url="/pages/search/index" class="search-input">
       <image class="icon"></image>
@@ -27,7 +28,7 @@
     <new-goods class="goods" goodlist="{{goodList}}"></new-goods>
   </view>
   <view class="recommend">
-    <text>好物推荐</text>
-    <!-- <new-goods prop-goodlist="{{goodList}}"></new-goods> -->
+    <text class="goodTitle">好物推荐</text>
+    <new-goods class="goods" goodlist="{{goodList}}"></new-goods>
   </view>
 </view>
